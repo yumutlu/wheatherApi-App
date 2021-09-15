@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'montseratt', sans-serif
+}
+
+.App{
+  background-image: url('./luke-chesser-PHtp0cDBJSM-unsplash.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+background-image: linear-gradient(to bottom, rgb(0 0 0 / 20%), rgb(3 139 255));
+};

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.citySelect{
+    padding: 10px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 0px 16px 0px 16px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: -3px 4px 5px 0px rgb(0 0 0 / 20%);
+    color:#313131
+}
+
+
+.city{
+   
+margin:10px;
+  
+}
+@media(max-width:768px) {
+    .citySelect{
+        width: 50%;
+    }
+}
+
