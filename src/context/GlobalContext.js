@@ -10,7 +10,7 @@ export const GlobalProvider = ({ children }) => {
   const values = { weatherOfCurrentCity, setWeatherOfCurrentCity, city, setCity };
 
   const apiKey = process.env.REACT_APP_WHEATER_API_KEY;
-  const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=058d176a84a96b22c9d2096dbc935f36&units=metrics&lang=tr`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metrics&lang=tr`;
 
   useEffect(() => {
     const fetchData = async () => {

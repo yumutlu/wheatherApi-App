@@ -1,10 +1,10 @@
 import React from "react";
 import "./Wheather.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import GlobalContext from "../../context/GlobalContext";
 
 function Wheather() {
-  const { city, weatherOfCurrentCity } = useContext(GlobalContext);
+  const {  weatherOfCurrentCity } = useContext(GlobalContext);
 
   const kelvinToFarenheit = (k) => {
     return (k - 273.15).toFixed(0);
@@ -24,7 +24,7 @@ function Wheather() {
       <div className="card-body">
         
         <div>
-          <ul activeClassName="active" className="card-item">
+          <ul className="card-item">
             <h4 className="date">{weatherOfCurrentCity?.list[0].dt_txt}</h4>
             {/*           <h3>{myDateArray[0]}</h3>
              */}{" "}
@@ -72,7 +72,7 @@ function Wheather() {
           </ul>
         </div>
         <div>
-          <ul activeClassName="active" className="card-item">
+          <ul className="card-item">
             <h4 className="date">{weatherOfCurrentCity?.list[11].dt_txt}</h4>
             {/*           <h3>{myDateArray[0]}</h3>
              */}{" "}
